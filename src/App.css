@@ -1,31 +1,54 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'),
+  url('./fonts/Gilroy-Bold.ttf') format('truetype'),
+  url('./fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/Gilroy-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Medium */
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local('Gilroy'),
+  url('./fonts/Gilroy-Medium.ttf') format('truetype'),
+  url('./fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/Gilroy-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  padding:0 250px 0px 250px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.menu{
+  width: 100%;
+  height: 88px;
+  margin:0;
+  padding:0;
+  border-bottom: 2px solid #828282;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.menu_item{
+  display: flex;
+}
+.menu_item_link{
 
-.App-link {
-  color: #61dafb;
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 22.28px;
+  color: #828282;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +58,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+.server_header{
+  font-family: 'Gilroy';
+  font-weight: 700;
+  line-height: 58.61px;
+  font-size: 35px;
+  color: #828282;
+}
+.server_content{
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 22px;
+  text-align: center;
+  align-self: center;
+  color: #070707;
 }
